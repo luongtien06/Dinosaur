@@ -39,7 +39,7 @@
         }
 
         .logo {
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             font-weight: bold;
             color: #ff6b35;
             animation: pulse 3s infinite;
@@ -84,7 +84,8 @@
 
         /* Hero Section */
         .hero {
-            height: 100vh;
+            width: 100%;
+            height: 120vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -140,6 +141,7 @@
         .cta-button:hover {
             transform: translateY(-3px) scale(1.05);
             box-shadow: 0 8px 25px rgba(255, 107, 53, 0.6);
+            color: #000000;
         }
 
         /* Floating particles */
@@ -170,6 +172,7 @@
 
         /* Dinosaur Cards Section */
         .dinosaur-section {
+            width: 100%;
             padding: 5rem 2rem;
             background: linear-gradient(180deg, #3c5b7a 0%, #34495e 100%);
             color: white;
@@ -181,6 +184,7 @@
         }
 
         .section-title {
+            width: 100%;
             text-align: center;
             font-size: 3rem;
             margin-bottom: 3rem;
@@ -196,6 +200,8 @@
         }
 
         .dinosaur-card {
+            width: auto;
+            text-align: center;
             background: linear-gradient(145deg, #51647a, #0f2337);
             padding: 2rem;
             border-radius: 20px;
@@ -203,7 +209,6 @@
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
-
         }
 
         .dinosaur-card::before {
@@ -223,10 +228,11 @@
 
         .dinosaur-card:hover {
             transform: translateY(-10px) rotateX(5deg);
-            box-shadow: 0 20px 50px rgba(255, 107, 53, 0.2);
+            box-shadow: 0 20px 50px rgba(173, 53, 9, 0.2);
         }
 
         .dinosaur {
+            background-color: #ecf0f1;
             width: 90px;
             height: 90px;
             border-radius: 25%;
@@ -254,13 +260,14 @@
         /* Timeline Section */
         .timeline-section {
             padding: 5rem 2rem;
+            width: 100%;
             background: linear-gradient(135deg, #34bfff 0%, #2e003d 100%);
             color: white;
         }
 
         .timeline {
             position: relative;
-            max-width: 800px;
+            max-width: 95%;
             margin: 0 auto;
         }
 
@@ -268,7 +275,7 @@
             content: '';
             position: absolute;
             width: 4px;
-            background: #ff6b35;
+            background: #f76e3c;
             top: 0;
             bottom: 0;
             left: 50%;
@@ -330,7 +337,7 @@
         }
 
         .footer-content {
-            max-width: 1200px;
+            max-width: 100%;
             margin: 0 auto;
         }
 
@@ -344,14 +351,14 @@
         .social-links a {
             width: 40px;
             height: 40px;
-            background: #ff6b35;
+            background: #ff7a4a;
             color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: all 0.5s ease;
         }
 
         .social-links a:hover {
@@ -494,7 +501,7 @@
             <h2 class="section-title fade-in">Các Loài Khủng Long Nổi Tiếng</h2>
             <div class="dinosaur-grid">
                 <div class="dinosaur-card fade-in">
-                    <img class="dinosaur" src="https://www.extinctanimals.org/wp-content/uploads/2015/10/Tyrannosaurus-Rex.jpg">
+                    <img class="dinosaur" src="https://upload.wikimedia.org/wikipedia/en/d/d2/Rexy-_the_Jurassic_Park_Tyrannosaurus_rex.png">
                     <h3>Tyrannosaurus Rex</h3>
                     <p>Được biết đến như "Vua của các loài khủng long", T-Rex là một trong những động vật ăn thịt lớn nhất từng sống trên Trái Đất. Với chiều dài lên đến 12-13m và răng nanh sắc như dao cạo.</p>
                 </div>
