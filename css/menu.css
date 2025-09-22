@@ -102,7 +102,7 @@ nav {
 .hero-content {
     z-index: 2;
     color: white;
-    max-width: 800px;
+    max-width: 100%;
     padding: 2rem;
 }
 
@@ -155,6 +155,7 @@ h1 {
 
 /* Dinosaur Cards Section */
 .dinosaur-section {
+    width: 100%;
     padding: 2rem 5rem;
     margin: 0 auto 4rem;
     background: linear-gradient(180deg, #3c5b7a 0%, #34495e 100%);
@@ -246,7 +247,7 @@ h1 {
 
 .timeline {
     position: relative;
-    max-width: 95%;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -461,3 +462,4 @@ footer {
     }
 
 }
+
