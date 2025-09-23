@@ -1,85 +1,92 @@
-// Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+// ========== Smooth scrolling ==========
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(anchor.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
 
-        // Header background on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(0, 0, 0, 0.95)';
-            } else {
-                header.style.background = 'rgba(0, 0, 0, 0.9)';
-            }
-        });
+// ========== Scroll effects (header + hero parallax) ==========
+let lastScrollY = 0;
+function onScroll() {
+  const y = window.scrollY;
 
-        // Fade in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+  // Header background
+  const header = document.querySelector('header');
+  if (header) {
+    header.style.background = y > 100
+      ? 'rgba(0, 0, 0, 0.95)'
+      : 'rgba(0, 0, 0, 0.9)';
+  }
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
+  // Hero parallax
+  const hero = document.querySelector('.hero');
+  if (hero) {
+    hero.style.transform = `translateY(${y * 0.5}px)`;
+  }
 
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
+  lastScrollY = y;
+}
+window.addEventListener('scroll', () => requestAnimationFrame(onScroll));
 
-        // Interactive dinosaur cards
-        document.querySelectorAll('.dinosaur-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.background = 'linear-gradient(145deg, #4a5a6c, #3c4e60)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.background = 'linear-gradient(145deg, #3a4a5c, #2c3e50)';
-            });
-        });
+// ========== Fade-in on scroll ==========
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, observerOptions);
 
-        // Parallax effect for hero section
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const hero = document.querySelector('.hero');
-            if (hero) {
-                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-            }
-        });
+document.querySelectorAll('.fade-in').forEach(el => {
+  observer.observe(el);
+});
 
-        // Add stagger animation to timeline items
-        const timelineItems = document.querySelectorAll('.timeline-item');
-        timelineItems.forEach((item, index) => {
-            item.style.animationDelay = `${index * 0.2}s`;
-        });
+// ========== Dinosaur cards (3D tilt) ==========
+document.querySelectorAll('.dinosaur-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    card.style.transform = `rotateX(${y * 10}deg) rotateY(${x * 10}deg) scale(1.05)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'rotateX(0) rotateY(0) scale(1)';
+  });
+});
 
-        // Dynamic particle generation
-        function createParticle() {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            particle.style.left = Math.random() * 100 + '%';
-            particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
-            particle.style.animationDelay = Math.random() * 5 + 's';
-            
-            document.querySelector('.particles').appendChild(particle);
-            
-            setTimeout(() => {
-                particle.remove();
-            }, 20000);
-        }
+// ========== Timeline stagger ==========
+const timelineItems = document.querySelectorAll('.timeline-item');
+timelineItems.forEach((item, index) => {
+  item.style.animationDelay = `${index * 0.2}s`;
+});
 
-        // Generate particles periodically
-        setInterval(createParticle, 3000);
+// ========== Dynamic particles ==========
+function createParticle() {
+  const particle = document.createElement('div');
+  particle.className = 'particle';
+  
+  // Random properties
+  particle.style.left = Math.random() * 100 + '%';
+  particle.style.width = particle.style.height = Math.random() * 6 + 4 + 'px';
+  particle.style.background = `hsl(${Math.random()*360}, 70%, 70%)`;
+  particle.style.opacity = Math.random().toFixed(2);
+  particle.style.animationDuration = (Math.random() * 8 + 8) + 's';
+  particle.style.animationDelay = Math.random() * 3 + 's';
+
+  document.querySelector('.particles')?.appendChild(particle);
+
+  // Cleanup
+  setTimeout(() => particle.remove(), 20000);
+}
+setInterval(createParticle, 1000);
