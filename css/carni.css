@@ -89,11 +89,14 @@ nav {
 .dinosaur-detail h1 {
     text-align: center;
     margin-bottom: 40px;
-    color: #ff5500;
+    color: #ff0000;
     font-size: 2.5rem;
     text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    background-color: #1a1a1a;
+    border-radius: 50px;
+    align-items: center;
+    animation: pulse 3s infinite;
 }
-
 .dino-container {
     display: flex;
     justify-content: center;
@@ -209,4 +212,12 @@ footer {
         border-radius: 10px;
         box-shadow: 0 0 0 rgba(255, 107, 53, 0.7);
     }
+}
+
+.h {
+    color: #15ff00;
+}
+
+.a {
+    color: #ff1d1ddc;
 }
