@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #295098 0%, #540089 100%);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(15, 5, 5, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem 1rem;
+    transition: all 0.5s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff6b35;
+    animation: pulse 3s infinite;
+}
+
+.nav-links {
+    list-style: none;
+    gap: 10px;
+}
+
+.nav-links li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    background-color: #ff6b35;
+    border-radius: 25px;
+    padding: 0.1rem 1rem;
+    margin-bottom: 8px;
+}
+
+.nav-links li a:hover {
+    color: #000000;
+    font-size: large;
+    transform: translateY(-1px);
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: #ff6b35;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.nav-links li a.checked {
+    background-color: #fff;
+    color: #ff6b35;
+    font-weight: bold;
+}
+
+.dinosaur-detail {
+    width: 100%;
+    padding-top: 20rem;
+    padding-bottom: 5rem;
+}
+
+.dinosaur-detail h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ff0000;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    background-color: #1a1a1a;
+    border-radius: 50px;
+    align-items: center;
+    animation: pulse 3s infinite;
+}
+.dino-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.dino-card {
+    background: #4c4c4c;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 0;
+}
+
+.dino-card img {
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    border:#ff5500 2px solid;
+}
+.dinosaur-card img::before {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.dino-info {
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+.dino-info h2 {
+    color: #ff6a00;
+    margin-bottom: 15px;
+}
+
+.dino-info p {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.stats {
+    background: #f7f9fc;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: #ff7a4a;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.5s ease;        
+}
+
+.social-links a:hover {
+    transform: translateY(-3px) rotate(360deg);
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .dino-card {
+        flex-direction: column;
+    }
+    
+    .dino-card img {
+        width: 100%;
+        height: 300px;
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        border-radius: 20px;
+        box-shadow: 0 0 0 rgba(255, 107, 53, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(255, 107, 53, 0.7);
+    }
+    100% {
+        transform: scale(1);
+        border-radius: 10px;
+        box-shadow: 0 0 0 rgba(255, 107, 53, 0.7);
+    }
+}
+
+.h {
+    color: #15ff00;
+}
+
+.a {
+    color: #ff1d1ddc;
+}
+
+.search-box {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-box input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid #666;
+    width: 60%;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #e63946;
+    box-shadow: 0 0 10px rgba(230,57,70,0.6);
+}
