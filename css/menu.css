@@ -107,7 +107,7 @@ nav {
 }
 
 .hero img {
-    width: 500px;
+    width: 400px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
@@ -478,4 +478,5 @@ footer {
 
 .dinosaur-card .a {
     color: #ff1d1ddc;
+
 }
