@@ -4,7 +4,7 @@ const dinos = [
     {
         name: "Indoraptor",
         category: "carnivores",
-        img: "img/indoraptor.jpg",
+        img: "./img/indoraptor.jpg",
         tag: "Super Hybrid",
         tagClass: "hybrid",
         meta: "Legendary •  Evol 4",
@@ -14,7 +14,7 @@ const dinos = [
     {
         name: "Indoraptor Gen 2",
         category: "carnivores",
-        img: "img/indoraptor gen 2.jpg",
+        img: "./img/indoraptor gen 2.jpg",
         tag: "Super Hybrid",
         tagClass: "hybrid",
         meta: "Legendary • Evol 3",
@@ -24,7 +24,7 @@ const dinos = [
     {
         name: "Chromaspinus",
         category: "carnivores",
-        img: "img/chromaspinus.jpg",
+        img: "./img/chromaspinus.jpg",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Legendary • Evol 4",
@@ -34,7 +34,7 @@ const dinos = [
     {
         name: "Scorpios Rex",
         category: "carnivores",
-        img: "img/scorpios.png",
+        img: "./img/scorpios.png",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Legendary • Evol 4",
@@ -44,7 +44,7 @@ const dinos = [
     {
         name: "Acrocanthosaurus",
         category: "carnivores",
-        img: "img/acrocanthosaurus.jpg",
+        img: "./img/acrocanthosaurus.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -54,7 +54,7 @@ const dinos = [
     {
         name: "Concavenator",
         category: "carnivores",
-        img: "img/concavenator.jpg",
+        img: "./img/concavenator.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -64,7 +64,7 @@ const dinos = [
     {
         name: "Rajastega",
         category: "carnivores",
-        img: "img/rajastega.jpg",
+        img: "./img/rajastega.jpg",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Legendary • Evol 4",
@@ -74,7 +74,7 @@ const dinos = [
     {
         name: "Alangasaurus",
         category: "carnivores",
-        img: "img/alangasaurus.jpg",
+        img: "./img/alangasaurus.jpg",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Common • Evol 4",
@@ -84,7 +84,7 @@ const dinos = [
     {
         name: "Indominus Rex",
         category: "carnivores",
-        img: "img/indominus.png",
+        img: "./img/indominus.png",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Legendary • Evol 4",
@@ -94,7 +94,7 @@ const dinos = [
     {
         name: "Indominus Rex Gen 2",
         category: "carnivores",
-        img: "img/indominus 2.png",
+        img: "./img/indominus 2.png",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Legendary • Evol 4",
@@ -104,7 +104,7 @@ const dinos = [
     {
         name: "Proceratosaurus",
         category: "carnivores",
-        img: "img/proceratosaurus.png",
+        img: "./img/proceratosaurus.png",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -114,7 +114,7 @@ const dinos = [
     {
         name: "Pachygalosaurus",
         category: "carnivores",
-        img: "img/pachygalosaurus.jpg",
+        img: "./img/pachygalosaurus.jpg",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Legendary • Evol 4",
@@ -124,7 +124,7 @@ const dinos = [
     {
         name: "Spinotasuchus",
         category: "carnivores",
-        img: "img/spinotasuchus.jpg",
+        img: "./img/spinotasuchus.jpg",
         tag: "Super Hybrid",
         tagClass: "hybrid",
         meta: "Super Rare • Evol 4",
@@ -134,7 +134,7 @@ const dinos = [
     {
         name: "Dimetrocarnus",
         category: "carnivores",
-        img: "img/dimetrocarnus.jpg",
+        img: "./img/dimetrocarnus.jpg",
         tag: "Super Hybrid",
         tagClass: "hybrid",
         meta: "Legendary • Evol 4",
@@ -144,7 +144,7 @@ const dinos = [
     {
         name: "Spinoraptor",
         category: "carnivores",
-        img: "img/spinoraptor.jpg",
+        img: "./img/spinoraptor.jpg",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Super Rare • Evol 4",
@@ -154,7 +154,7 @@ const dinos = [
     {
         name: "Tanycolagreus",
         category: "carnivores",
-        img: "img/tanycolagreus.jpg",
+        img: "./img/tanycolagreus.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -164,7 +164,7 @@ const dinos = [
     {
         name: "Tyranosaurus Rex",
         category: "carnivores",
-        img: "img/tyranosaurus rex 1.jpg",
+        img: "./img/tyranosaurus rex 1.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -174,7 +174,7 @@ const dinos = [
     {
         name: "Tyranosaurus Rex Gen 2",
         category: "carnivores",
-        img: "img/tyranosaurus rex 2.jpg",
+        img: "./img/tyranosaurus rex 2.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -184,7 +184,7 @@ const dinos = [
     {
         name: "Velociraptor",
         category: "carnivores",
-        img: "img/velociraptor 1.jpg",
+        img: "./img/velociraptor 1.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Super Rare • Evol 4",
@@ -194,7 +194,7 @@ const dinos = [
     {
         name: "Velociraptor Gen 2",
         category: "carnivores",
-        img: "img/velociraptor 2.jpg",
+        img: "./img/velociraptor 2.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Super Rare • Evol 4",
@@ -204,7 +204,7 @@ const dinos = [
     {
         name: "Spinosaurus Rebirth",
         category: "carnivores",
-        img: "img/spinosaurus rebirth.png",
+        img: "./img/spinosaurus rebirth.png",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -214,7 +214,7 @@ const dinos = [
     {
         name: "Blue",
         category: "carnivores",
-        img: "img/blue.png",
+        img: "./img/blue.png",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -226,7 +226,7 @@ const dinos = [
     {
         name: "Armormata",
         category: "herbivores",
-        img: "img/armormata.jpg",
+        img: "./img/armormata.jpg",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Legendary • Evol 4",
@@ -236,7 +236,7 @@ const dinos = [
       {
         name: "Gigakylocephalus",
         category: "herbivores",
-        img: "img/gigakylocephalus.jpg",
+        img: "./img/gigakylocephalus.jpg",
         tag: "Super Hybrid",
         tagClass: "hybrid",
         meta: "Super Rare • Evol 4",
@@ -246,7 +246,7 @@ const dinos = [
     {
         name: "Monostegotops",
         category: "herbivores",
-        img: "img/monostegotops.jpg",
+        img: "./img/monostegotops.jpg",
         tag: "Super Hybrid",
         tagClass: "hybrid",
         meta: "Super Rare • Evol 4",
@@ -256,7 +256,7 @@ const dinos = [
     {
         name: "Eolambia",
         category: "herbivores",
-        img: "img/eolambia.png",
+        img: "./img/eolambia.png",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -266,7 +266,7 @@ const dinos = [
     {
         name: "Stegosaurus",
         category: "herbivores",
-        img: "img/stegosaurus.jpg",
+        img: "./img/stegosaurus.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Super Rare • Evol 4",
@@ -276,7 +276,7 @@ const dinos = [
     {
         name: "Apatosaurus",
         category: "herbivores",
-        img: "img/apatosaurus.jpg",
+        img: "./img/apatosaurus.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -286,7 +286,7 @@ const dinos = [
     {
         name: "Brachiosaurus",
         category: "herbivores",
-        img: "img/brachiosaurus.jpg",
+        img: "./img/brachiosaurus.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -296,7 +296,7 @@ const dinos = [
     {
         name: "Deinocheirus",
         category: "herbivores",
-        img: "img/deinocheirus.jpg",
+        img: "./img/deinocheirus.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -306,7 +306,7 @@ const dinos = [
     {
         name: "Pachyceratops",
         category: "herbivores",
-        img: "img/pachyceratops.jpg",
+        img: "./img/pachyceratops.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Rare • Evol 4",
@@ -316,7 +316,7 @@ const dinos = [
     {
         name: "Unaysaurus",
         category: "herbivores",
-        img: "img/unaysaurus.jpg",
+        img: "./img/unaysaurus.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -326,7 +326,7 @@ const dinos = [
     {
         name: "Unayrhynchus",
         category: "herbivores",
-        img: "img/unayrhynchus.jpg",
+        img: "./img/unayrhynchus.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -338,7 +338,7 @@ const dinos = [
     {
         name: "Tapejalocephalus",
         category: "pterosaurs",
-        img: "img/tapejalocephalus.jpg",
+        img: "./img/tapejalocephalus.jpg",
         tag: "Super Hybrid",
         tagClass: "hybrid",
         meta: "Rare • Evol 4",
@@ -348,7 +348,7 @@ const dinos = [
     {
         name: "Suchoripterus",
         category: "pterosaurs",
-        img: "img/sucho.jpg",
+        img: "./img/sucho.jpg",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Legendary • Evol 4",
@@ -358,7 +358,7 @@ const dinos = [
     {
         name: "Aerotitan",
         category: "pterosaurs",
-        img: "img/aerotitan.jpg",
+        img: "./img/aerotitan.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Super Rare • Evol 4",
@@ -368,7 +368,7 @@ const dinos = [
     {
         name: "Pterodactylus",
         category: "pterosaurs",
-        img: "img/pterodactylus.png",
+        img: "./img/pterodactylus.png",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -378,7 +378,7 @@ const dinos = [
     {
         name: "Pelecachtylus",
         category: "pterosaurs",
-        img: "img/pelecachtylus.jpg",
+        img: "./img/pelecachtylus.jpg",
         tag: "Super Hybrid",
         tagClass: "hybrid",
         meta: "Common • Evol 4",
@@ -388,7 +388,7 @@ const dinos = [
     {
         name: "Tapejalosaurus",
         category: "pterosaurs",
-        img: "img/tapejalosaurus.jpg",
+        img: "./img/tapejalosaurus.jpg",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Rare • Evol 4",
@@ -398,7 +398,7 @@ const dinos = [
     {
         name: "Tropeogopterus",
         category: "pterosaurs",
-        img: "img/tropeogopterus.png",
+        img: "./img/tropeogopterus.png",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -408,7 +408,7 @@ const dinos = [
     {
         name: "Eudimorphodon",
         category: "pterosaurs",
-        img: "img/eudimorphodon.jpg",
+        img: "./img/eudimorphodon.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -418,7 +418,7 @@ const dinos = [
     {
         name: "Limnorhynchus",
         category: "pterosaurs",
-        img: "img/limnorhynchus.jpg",
+        img: "./img/limnorhynchus.jpg",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Common • Evol 4",
@@ -430,7 +430,7 @@ const dinos = [
    {
         name: "Gorgosuchus",
         category: "amphibians",
-        img: "img/Gorgosuchus.jpg",
+        img: "./img/Gorgosuchus.jpg",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Legendary • Evol 4",
@@ -438,9 +438,29 @@ const dinos = [
         atk: "2361"
    },
    {
+        name: "Diplosuchus",
+        category: "amphibians",
+        img: "./img/Diplosuchus.jpg",
+        tag: "Super Hybrid",
+        tagClass: "hybrid",
+        meta: "Rare • Evol 4",
+        hp: "3415",
+        atk: "1410"
+   },
+   {
+        name: "Diplotator",
+        category: "amphibians",
+        img: "./img/Diplotator.jpg",
+        tag: "Hybrid",
+        tagClass: "hybrid",
+        meta: "Rare • Evol 4",
+        hp: "1691",
+        atk: "584"
+   },
+   {
         name: "Ichthyostega",
         category: "amphibians",
-        img: "img/ichthyostega.jpg",
+        img: "./img/ichthyostega.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -450,7 +470,7 @@ const dinos = [
    {
         name: "Koolasaurus",
         category: "amphibians",
-        img: "img/koolasaurus.jpg",
+        img: "./img/koolasaurus.jpg",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Legendary • Evol 4",
@@ -460,7 +480,7 @@ const dinos = [
    {
         name: "Mastodonsaurus",
         category: "amphibians",
-        img: "img/mastodonsaurus.jpg",
+        img: "./img/mastodonsaurus.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -470,7 +490,7 @@ const dinos = [
    {
         name: "Microposaurus",
         category: "amphibians",
-        img: "img/microposaurus.jpg",
+        img: "./img/microposaurus.jpg",
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -480,7 +500,7 @@ const dinos = [
    {
         name: "Nundagosaurus",
         category: "amphibians",
-        img: "img/nundagosaurus.jpg",
+        img: "./img/nundagosaurus.jpg",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Rare • Evol 4",
@@ -490,7 +510,7 @@ const dinos = [
    {
         name: "Ostaposaurus",
         category: "amphibians",
-        img: "img/ostaposaurus.jpg",
+        img: "./img/ostaposaurus.jpg",
         tag: "Hybrid",
         tagClass: "hybrid",
         meta: "Legendary • Evol 4",
@@ -500,7 +520,7 @@ const dinos = [
    {
         name: "Prestosuchus",
         category: "amphibians",
-        img: "img/prestosuchus.jpg",    
+        img: "./img/prestosuchus.jpg",    
         tag: "Default",
         tagClass: "Default",
         meta: "Legendary • Evol 4",
@@ -508,7 +528,6 @@ const dinos = [
         atk: "1870"
    }
 ];
-
 // 2. Hàm hiển thị 
 function renderDinos(data) {
     const container = document.getElementById('dino-list');
@@ -583,4 +602,5 @@ function init() {
 
 // Chạy khởi tạo
 document.addEventListener("DOMContentLoaded", init);
+
 
