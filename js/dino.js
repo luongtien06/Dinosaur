@@ -438,26 +438,6 @@ const dinos = [
         atk: "2361"
    },
    {
-        name: "Diplosuchus",
-        category: "amphibians",
-        img: "img/Diplosuchus.jpg",
-        tag: "Super Hybrid",
-        tagClass: "hybrid",
-        meta: "Rare • Evol 4",
-        hp: "3415",
-        atk: "1410"
-   },
-   {
-        name: "Diplotator",
-        category: "amphibians",
-        img: "img/Diplotator.jpg",
-        tag: "Hybrid",
-        tagClass: "hybrid",
-        meta: "Rare • Evol 4",
-        hp: "1691",
-        atk: "584"
-   },
-   {
         name: "Ichthyostega",
         category: "amphibians",
         img: "img/ichthyostega.jpg",
@@ -603,3 +583,4 @@ function init() {
 
 // Chạy khởi tạo
 document.addEventListener("DOMContentLoaded", init);
+
